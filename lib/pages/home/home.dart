@@ -14,7 +14,7 @@ class Home extends GetView<HomeController> {
           child: Text('Account'),
           onPressed: () => Get.toNamed(
             AppRoutes.Account,
-            parameters: {'name': 'shumintao'},
+            arguments: {'name': 'SHUMIN'}, // 传参
           ),
         ),
       ),
