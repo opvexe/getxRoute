@@ -11,7 +11,7 @@ class Home extends GetView<HomeController> {
     return Scaffold(
       body: Center(
         child: RaisedButton(
-          child: Text('Account'),
+          child: Text('Home'),
           onPressed: () => Get.toNamed(
             AppRoutes.Account,
             arguments: {'name': 'SHUMIN'}, // 传参

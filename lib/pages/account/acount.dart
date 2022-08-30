@@ -9,11 +9,15 @@ class Account extends GetView<AccountController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text(controller.name),
+      ),
       body: Center(
         child: RaisedButton(
-          child: Text(controller.name),
+          child: Text('Account'),
           onPressed: () => Get.toNamed(
             AppRoutes.Home,
+            arguments: {'title': '我来自Account页面'},
           ),
         ),
       ),
